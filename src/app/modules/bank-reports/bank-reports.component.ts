@@ -79,7 +79,7 @@ export class BankReportsComponent implements OnInit {
       this.vizorService.postData(this.authorization,
         this.xAuthorization, this.files[index][0] as File, this.return.revisions[0].id).subscribe(data => {
           console.log(data);
-          setTimeout(() => { window.location.reload(); }, 3000);
+          setTimeout(() => { window.location.reload(); }, 6000);
         });
     }
   }
